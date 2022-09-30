@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".LoadingScreen">
+    tools:context=".LoadingScreenTwo">
 
     <androidx.cardview.widget.CardView
         android:layout_width="@dimen/_180sdp"
@@ -29,7 +29,9 @@
                 android:paddingStart="@dimen/_10sdp"
                 android:text="Dish name"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_20ssp" />
+                android:textSize="@dimen/_20ssp"
+                android:id="@+id/dish_name"
+                />
 
 
             <ImageView
