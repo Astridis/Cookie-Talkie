@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"
-        app:cardBackgroundColor="@color/yellow"
+        app:cardBackgroundColor="#7A9E9F"
         android:layout_margin="@dimen/_10sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         app:cardElevation="@dimen/_10sdp">
@@ -19,28 +19,32 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/dish"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
-                android:id="@+id/dish"
-                android:src="@drawable/bg_food"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-1dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
-                />
+                android:src="@drawable/bg_food" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="All available recipes"
-                android:fontFamily="@font/Montserrat"
-                android:layout_alignParentBottom="true"
+                android:layout_height="49dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="-5dp"
+                android:fontFamily="@font/Montserrat"
+                android:gravity="center"
                 android:padding="@dimen/_5sdp"
-                />
+                android:text="Available recipes"
+                android:textColor="@color/black" />
 
 
-
-            </RelativeLayout>
+        </RelativeLayout>
 
 
 

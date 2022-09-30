@@ -4,37 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
-    >
+    android:background="#EEF5DB"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="All available recipes"
-        android:textSize="@dimen/_20ssp"
-        android:paddingStart="@dimen/_10sdp"
-        android:textColor="@color/black"
         android:fontFamily="@font/Montserrat"
-        android:padding="@dimen/_10sdp" />
+        android:padding="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="#B8D8D8"
+        android:text="All available recipes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        app:cardElevation="@dimen/_10sdp">
+        android:layout_marginEnd="@dimen/_11sdp"
+        app:cardElevation="@dimen/_11sdp">
+
+    </androidx.cardview.widget.CardView>
+
     <SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:theme="@style/Overlay.Search"
-        android:queryHint="Search for recipes"
+        android:layout_height="wrap_content"
         android:background="@drawable/bg_start_button"
         android:iconifiedByDefault="false"
-
-        android:layout_height="wrap_content"
+        android:queryHint="Search for recipes"
+        android:theme="@style/Overlay.Search"
 
         />
-    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item"
@@ -43,16 +45,19 @@
         android:layout_margin="@dimen/_10sdp"
         android:orientation="horizontal"
         tools:itemCount="1"
-        tools:listitem="@layout/item"/>
+        tools:listitem="@layout/item" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Category"
-        android:textSize="@dimen/_20ssp"
-        android:paddingStart="@dimen/_10sdp"
-        android:textColor="@color/black"
         android:fontFamily="@font/Montserrat"
-        android:padding="@dimen/_10sdp" />
+        android:padding="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="#B8D8D8"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idk"
         android:layout_width="match_parent"
@@ -60,7 +65,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:orientation="horizontal"
         tools:itemCount="1"
-        tools:listitem="@layout/item_cat"/>
+        tools:listitem="@layout/item_cat" />
 
 
 </LinearLayout>
