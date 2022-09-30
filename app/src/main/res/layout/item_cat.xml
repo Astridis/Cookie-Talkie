@@ -19,7 +19,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B8D8D8"
+                android:fontFamily="@font/Montserrat"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Dish name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
 
 
             <ImageView
