@@ -19,7 +19,7 @@
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/Montserrat"
+        android:fontFamily="@font/montserrat"
         android:padding="@dimen/_10sdp"
         android:paddingStart="@dimen/_10sdp"
         android:background="#B8D8D8"
@@ -58,7 +58,7 @@
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/Montserrat"
+        android:fontFamily="@font/montserrat"
         android:padding="@dimen/_10sdp"
         android:paddingStart="@dimen/_10sdp"
         android:background="#B8D8D8"

@@ -1,32 +1,32 @@
-package com.example.recipeapp.adapter
+package com.example.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipeapp.R
-import com.example.recipeapp.entities.Recipe
+import com.example.entities.Recipe
 import kotlinx.android.synthetic.main.item_cat.view.*
 
-class SubCategoryAdapter: RecyclerView.Adapter<SubCategoryAdapter.RecipeviewHolder>() {
+class MainCategoryAdapter: RecyclerView.Adapter<MainCategoryAdapter.RecipeviewHolder>() {
 
-    var arrSubCategory = ArrayList<Recipe>()
+    var arrMainCategory = ArrayList<Recipe>()
     class RecipeviewHolder(view:View): RecyclerView.ViewHolder(view){
 
     }
     fun setData(arrData:List<Recipe>){
-        arrSubCategory = arrData as ArrayList<Recipe>
+        arrMainCategory = arrData as ArrayList<Recipe>
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeviewHolder {
-        return RecipeviewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_cat,parent,false))
+        return RecipeviewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false))
     }
 
     override fun getItemCount(): Int {
-        return arrSubCategory.size
+        return arrMainCategory.size
     }
 
     override fun onBindViewHolder(holder: RecipeviewHolder, position: Int) {
-        holder.itemView.dish_name.text = arrSubCategory[position].dishName
+        holder.itemView.dish_name.text = arrMainCategory[position].dishName
     }
 }

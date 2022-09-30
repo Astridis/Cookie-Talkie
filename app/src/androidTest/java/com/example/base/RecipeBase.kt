@@ -1,11 +1,11 @@
-package com.example.recipeapp.base
+package com.example.base
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.recipeapp.dao.RecipeDao
-import com.example.recipeapp.entities.Recipe
+import com.example.dao.RecipeDao
+import com.example.entities.Recipe
 
 @Database(entities = [Recipe::class], version=1, exportSchema = false)
 abstract class RecipeBase: RoomDatabase() {

@@ -1,11 +1,11 @@
-package com.example.recipeapp
+package com.example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.recipeapp.adapter.MainCategoryAdapter
-import com.example.recipeapp.adapter.SubCategoryAdapter
-import com.example.recipeapp.entities.Recipe
+import com.example.adapter.MainCategoryAdapter
+import com.example.adapter.SubCategoryAdapter
+import com.example.entities.Recipe
 import kotlinx.android.synthetic.main.item_cat.view.*
 
 
